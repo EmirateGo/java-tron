@@ -525,8 +525,7 @@ public class WalletTest {
 
     System.out.printf(builder.build().toString());
   }
-<<<<<<< HEAD
-=======
+
 
   @Test
   public void getRewardOfVoteEachBlock() {
@@ -650,6 +649,5 @@ public class WalletTest {
     Assert.assertFalse(wallet.existAddress(address1));
   }
 
->>>>>>> develop
 }
 

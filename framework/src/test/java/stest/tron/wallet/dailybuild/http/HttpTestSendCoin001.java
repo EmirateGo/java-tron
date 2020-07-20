@@ -66,18 +66,10 @@ public class HttpTestSendCoin001 {
   /**
    * constructor.
    */
-<<<<<<< HEAD
-  @Test(enabled = true, description = "Get transaction info by id from solidity by http")
-  public void test3GetTransactionInfoByIdFromSolidity() {
-    String txid = HttpMethed.sendCoinGetTxid(httpnode, fromAddress, receiverAddress, amount,
-        testKey002);
-    HttpMethed.waitToProduceOneBlock(httpnode);
-=======
   @Test(enabled = true, description = "Get transaction by id from PBFT by http")
   public void test3GetTransactionByIdFromPbft() {
     String txid = HttpMethed
         .sendCoinGetTxid(httpnode, fromAddress, receiverAddress, amount, testKey002);
->>>>>>> develop
     HttpMethed.waitToProduceOneBlockFromSolidity(httpnode, httpSoliditynode);
 
     response = HttpMethed.getTransactionByIdFromPbft(httpPbftNode, txid);
